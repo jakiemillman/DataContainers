@@ -86,12 +86,12 @@ public:
 	{
 		return Sum(Root) / Count(Root);
 	}
-	int Level(Element* Root)
+	int depth(Element* Root)
 	{
 		static int a;
 		static int b;
-		a+= Count(Root->pRight) - 1;
-		b += Count(Root->pLeft) - 1;
+		a+= Count(Root->pRight);
+		b += Count(Root->pLeft);
 		return a >= b ? a : b;
 	}
 };
