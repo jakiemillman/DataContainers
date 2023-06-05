@@ -130,7 +130,7 @@ int main()
 	cout << "Kол-во элементов: " << tree.Count(tree.getRoot()) << endl;
 	cout << "Сумма элементов: " << tree.Sum(tree.getRoot()) << endl;
 	cout << "Среднее значение элементов элементов: " << tree.avg(tree.getRoot()) << endl;
-	cout << "Глубина дерева: " << tree.Level(tree.getRoot()) << endl;
+	cout << "Глубина дерева: " << tree.depth(tree.getRoot()) << endl;
 
 	UniqueTree u_tree;
 	for (int i = 0; i < n; i++)
